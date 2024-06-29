@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calculator {
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .display {
+    background-color: #222;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-size: 2.5em;
+    border-bottom: 1px solid #888;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1px;
+  }
+  
+  .button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #666;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .button.function {
+    background-color: #888;
+  }
+  
+  .button.operation {
+    background-color: #ff9500;
+  }
+  
+  .button.equal {
+    background-color: #34c759;
+    color: #fff;
+    grid-column: 4;
+    grid-row: span 2; /* This makes the button span two rows */
+  }
+  
+  .button.zero {
+    grid-column: span 2;
+  }
+  
+  .button:hover {
+    background-color: #777;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button:active {
+    background-color: #555;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button.function:hover {
+    background-color: #999;
+  }
+  
+  .button.operation:hover {
+    background-color: #e68a00;
+  }
+  
+  .button.operation:active {
+    background-color: #cc7a00;
+  }
+  
+  .button.equal:hover {
+    background-color: #28a745;
+  }
+  
+  .button.equal:active {
+    background-color: #218838;
+  }
+  
